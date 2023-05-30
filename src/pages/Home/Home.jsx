@@ -1,13 +1,16 @@
+import React from 'react'
 import { Container, Nav, NavbarBrand } from "react-bootstrap";
-import styles from "./NavbarHeader.module.css";
+import styles from "./Home.module.css";
 import NavBar from "react-bootstrap/Navbar";
-import Image from "/home/lucas/Documentos/Exercicios/search-pharma/src/assets/img/carrinho-carrinho.png";
+import Image from "../../assets/img/carrinho-carrinho.png";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NavDropdown } from "react-bootstrap";
+import { Carrousel} from "../../components/Home/Carrousel/Carrousel"
 
-const Navbar = () => {
+export default function Home() {
   return (
     <>
-      <NavBar className={styles.corpo}>
+    <NavBar className={styles.corpo}>
         <Container>
           <NavbarBrand href="#">Logo</NavbarBrand>
 
@@ -48,8 +51,7 @@ const Navbar = () => {
           </Nav>
         </Container>
       </NavBar>
-    </>
-  );
-};
-
-export default Navbar;
+      <Carrousel/>
+      </>
+  )
+}

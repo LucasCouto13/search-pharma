@@ -1,8 +1,7 @@
 import styles from "./Carrousel.module.css";
 import Carousel from "react-bootstrap/Carousel";
-// import Image from "/home/lucas/Documentos/Exercicios/search-pharma/src/assets/img/foto_farmacia.jpg";
-import Image from "/home/lucas/Documentos/Exercicios/search-pharma/src/assets/img/franquias-farmacia-1.jpg";
-
+import Image from "../../../assets/img/franquias-farmacia-1.jpg";
+  
 export default function Carrousel() {
   return (
     <>
